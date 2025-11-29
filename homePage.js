@@ -13,6 +13,9 @@ function hamburgerMenuToggle() {
     }
 }
 document.querySelector("button.hamburgerMenu").addEventListener("click", hamburgerMenuToggle);
+document.querySelector("li#loginLi").addEventListener("click", function () {
+    alert("We are launching soon");
+});
 document.querySelector("a.getStartedLink").addEventListener("click", function () {
     alert("We are launching soon");
 });
