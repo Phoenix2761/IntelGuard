@@ -13,7 +13,7 @@
     </head>
     <body>
         <div class="heroSection" id="heroSectionDiv">
-            <img src="../images/heroSectionBackground.png" alt="HERO SECTION" class="heroSectionImage" />
+            <img src="./heroSectionBackground.png" alt="HERO SECTION" class="heroSectionImage" />
             <nav>
                 <span class="navbarLogoContainer">
                     <h2>IntelGuard</h2>
@@ -85,4 +85,5 @@
         ?>
         <script src="./homePage.js" charset="UTF-8" type="module"></script>
     </body>
+
 </html>
