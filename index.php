@@ -32,7 +32,7 @@
                     <a href="#sectionThree" class="getStartedListItemLink">GET STARTED</a></li>
                     <hr class="hrLast" />
                 </ul>
-                <a href="#" class="getStartedLink">
+                <a href="#sectionThree" class="getStartedLink">
                     GET STARTED
                 </a>
                 <button class="hamburgerMenu">
@@ -87,4 +87,5 @@
     </body>
 
 </html>
+
 
