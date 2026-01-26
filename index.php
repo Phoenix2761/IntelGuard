@@ -29,7 +29,7 @@
                     <li><a href="./login.php">LOGIN</a></li>
                     <hr class="hrSecondToLast" />
                     <li class="getStartedLinkListItem">
-                    <a href="#" class="getStartedListItemLink">GET STARTED</a></li>
+                    <a href="#sectionThree" class="getStartedListItemLink">GET STARTED</a></li>
                     <hr class="hrLast" />
                 </ul>
                 <a href="#" class="getStartedLink">
@@ -71,12 +71,12 @@
                 <div class="cardOne">
                     <p>Get as many security personnel <br />
                     as you need within minutes.</p>
-                    <a class="categoryOne" href="#">GET PERSONNEL</a>
+                    <a class="categoryOne" href="./cSignUp.php">GET PERSONNEL</a>
                 </div>
                 <div class="cardTwo">
                     <p>We also provide jobs for <br />
                     promising security personnel.</p>
-                    <a class="categoryTwo" href="#">GET A GIG</a>
+                    <a class="categoryTwo" href=".signUp.php">GET A GIG</a>
                 </div>
             </div>
         </div>
@@ -87,3 +87,4 @@
     </body>
 
 </html>
+
