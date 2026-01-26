@@ -1,0 +1,2633 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 0px 0px;
+    /* overflow-y: scroll; */
+}
+
+/* signUp.php and login.php styles*/
+body#signUpBody {
+    min-height: 100vh;
+    background-color: #000000;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+}
+
+body#signUpBody div#registerContainer {
+    min-height: fit-content;
+    min-width: 504px;
+    background-color: #232323;
+    border-radius: 40px;
+}
+
+div#registerContainer div.registerToggleContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 44px;
+    width: 236px;
+    background-color: #0D0D0D;
+    border-radius: 62px;
+    margin: 42px 0px 0px 42px;
+}
+
+div#registerContainer div.registerToggleContainer button {
+    background-color: #1B1B1B;
+    color: #FFFFFF;
+    font-family: "Kantumruy Pro", sans-serif;
+    height: 36px;
+    width: 112px;
+    font-weight: 600;
+    border: none;
+    border-radius: 46px;
+}
+
+div#registerContainer div.registerToggleContainer button.hiddenSectionButton {
+    background-color: #0D0D0D;
+    color: #585858;
+}
+
+/*
+body#loginBody {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+} */
+
+div#registerContainer div.hiddenSection {
+    display: none;
+}
+
+body#signUpBody div#signUpDiv, body#signUpBody div#loginDiv {
+    padding: 0px 46px 0px 46px;
+}
+
+body#signUpBody h1.signUpH1 {
+    width: fit-content;
+    font-size: 24px;
+    font-family: "Kantumruy Pro", sans-serif;
+    text-align: center;
+    margin: 40px 0px 22px 0px;
+}
+
+body#signUpBody form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: none;
+    padding: 0px 0px 40px 0px;
+    border-radius: 12px;
+}
+
+body#signUpBody div.loginDiv form {
+    width: 100%;
+}
+
+body#signUpBody fieldset {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    border: none;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+body#signUpBody form fieldset div#flNameDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0px 18px 0px;
+}
+
+body#signUpBody form fieldset div#infoDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    /* height: 560px; */
+}
+
+body#signUpBody form fieldset input {
+    display: block;
+    margin: 8px 0px 18px 0px;
+    height: 48px;
+    width: 98%;
+    padding: 2px 2px 2px 8px;
+    border: 1px solid #666667;
+    border-radius: 6px;
+    background-color: #242424;
+    color: #FFFFFF;
+}
+
+body#signUpBody form fieldset div#flNameDiv input {
+    width: 46%;
+}
+
+form fieldset div#flNameDiv input {
+    margin: 0px 0px 0px 0px;
+}
+
+form fieldset input#fName {
+    margin-top: 0px;
+}
+
+.userNameUsed {
+    height: fit-content;
+    width: 94%;
+    color: #FFFFFF;
+    margin: 0px 0px 12px 0px;
+}
+
+.userNameUsedActive {
+    display: inline-block;
+}
+
+input.fileInput {
+    display: none !important;
+}
+
+button.fileUploaded {
+    color: #ADFF2F !important;
+}
+
+span.statusSpan {
+    display: block;
+    text-align: center;
+    font-family: "Kantumruy Pro", sans-serif;
+    width: 100%;
+    margin: 0px 0px 30px 0px;
+}
+
+div#loginDiv form fieldset div#infoDiv {
+    height: 198px;
+}
+
+div#infoDiv button {
+    align-self: center;
+    background-color: #474747;
+    color: #FFFFFF;
+    border: 0.8px solid #666667;
+    width: 98%;
+    margin: 8px 0px 18px 0px;
+}
+
+form fieldset div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+form fieldset div a {
+    text-decoration: none;
+    font-family: "Kantumruy Pro", sans-serif;
+    color: #A5A5A5;
+}
+
+form fieldset div a#loginA {
+    align-self: flex-start;
+    color: #A5A5A5;
+    padding: 6px 6px 6px 6px;
+    border-radius: 4px;
+    font-family: "Kantumruy Pro", sans-serif;
+    font-weight: 700;
+}
+
+form fieldset div a#signUpA {
+    align-self: flex-start;
+    color: #A5A5A5;
+    padding: 6px 6px 6px 6px;
+    border-radius: 4px;
+    font-family: "Kantumruy Pro", sans-serif;
+    font-weight: 700;
+}
+
+form fieldset div > button {
+    align-self: flex-end;
+    color: #000000;
+    background-color: #FFFAFA;
+    padding: 6px 6px 6px 6px;
+    margin: 10px 0px 0px 0px;
+    border-radius: 4px;
+    font-family: "Kantumruy Pro", sans-serif;
+    height: 46px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+form div.logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #000000; */
+    height: 100%;
+    width: 46%;
+}
+
+form div.logoContainer h2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    font-family: "Kantumruy Pro", "sans-serif";
+    margin: 0px 0px 0px 0px;
+}
+
+p#statusMessage {
+    font-family: "Kantumruy Pro", sans-serif;
+    font-weight: 600;
+}
+
+/* navigationBar.php styles */
+nav.navigationBar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    align-self: flex-end;
+    height: 50px;
+    width: calc(100vw - 260px);
+    background-color: #ffffff;
+    /* border: 2px solid #F5811E;
+    border-radius: 6px; */
+    border-bottom: 2px solid #A5A5A5;
+    top: 0.8%;
+    right: 0px;
+    z-index: 1;
+}
+
+nav.navigationBar button.hamburgerMenuTwo {
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0px 0px 0px 18px;
+    background-color: transparent;
+    border: none;
+}
+
+button.hamburgerTwoMenu span {
+    display: inline-block;
+    height: 2px;
+    width: 42%;
+    background-color: #ffffff;
+}
+
+button.hamburgerMenuTwo span.hamburgerMenuBarOne {
+    margin: 0px 0px 3.4px 0px;
+}
+
+button.hamburgerMenuTwo span.hamburgerMenuBarOneShow {
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+    transform: rotate(45deg);
+}
+
+button.hamburgerMenuTwo span.hamburgerMenuBarTwo {
+    margin: 3.4px 0px 0px 0px;
+}
+
+button.hamburgerMenuTwo span.hamburgerMenuBarTwoShow {
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+    transform: rotate(135deg);
+}
+
+nav.navigationBar button.hamburgerMenuTwo span {
+    display: block;
+    height: 2px;
+    width: 20px;
+    background-color: #000000;
+}
+
+nav.navigationBar a#userInfoLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: "Kantumruy Pro", sans-serif;
+    margin: 0px 20px 0px 0px;
+    text-decoration: none;
+    color: #000000;
+}
+
+nav.navigationBar span.userInfo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: #000000;
+}
+
+nav.navigationBar span#profileInfoSpan {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+nav.navigationBar span img#profilePictureIcon {
+    width: 26px;
+    /* margin: 0px 8px 0px 0px; */
+}
+
+/* sideMenu.php styles */
+div#sideMenu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 260px;
+    /* background-color: #F5811E; */
+    /* background-color: #010717; */
+    background-color: #F3F2F1;
+    /* border: 2px solid #000000; */
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    /* border-radius: 6px; */
+    z-index: 2;
+}
+
+.sideMenuLogoImage {
+    width: 26px !important;
+    margin: 0px 10px 0px 0px !important;
+}
+
+div#sideMenu div#sideMenuCloseBarsContainer {
+    position: relative;
+    display: none;
+    background-color: #010717;
+    height: 30px;
+    width: 30px;
+    background-color: #010717;
+    align-self: flex-end;
+    top: 20px;
+    right: 20px;
+}
+
+div#sideMenu div#sideMenuCloseBarsContainer span {
+    position: absolute;
+    display: inline-block;
+    height: 2px;
+    width: 20px;
+    background-color: #ffffff;
+    top: 50%;
+    left: 18%;
+}
+
+div#sideMenu div#sideMenuCloseBarsContainer span#sideMenuCloseBarOne {
+    transform: rotate(45deg);
+}
+
+div#sideMenu div#sideMenuCloseBarsContainer span#sideMenuCloseBarTwo {
+    transform: rotate(135deg);
+}
+
+div#sideMenu h2#sideMenuLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: "Kameron", serif;
+    text-align: center;
+    font-size: 28px;
+    text-align: left;
+    margin: 60px 0px 48px 0px;
+}
+
+div#sideMenu ul {
+    height: 54%;
+    list-style-type: none;
+    padding: 0px 0px 0px 0px;
+    margin: 40px 0px 0px 0px;
+}
+
+div#sideMenu ul li {
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: center;
+    height: 64px;
+    width: 100%;
+    /* padding: 0px 10px 0px 0px; */
+}
+
+div#sideMenu ul li a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: #000000;
+    font-family: "Kantumruy Pro", sans-serif;
+    font-size: 20px;
+    padding: 0px 10px 0px 14%;
+}
+
+div#sideMenu ul li a.active {
+    /* color: #010717; UNCOMMENT*/
+    /* border-left: 6px solid #010717; UNCOMMENT*/
+    border-left: 6px solid #FF0000;
+}
+
+div#sideMenu ul li svg {
+    margin: 0px 10px 0px 0px;
+}
+
+span.sideMenuTextHide {
+    display: none;
+}
+
+/* jobs.php styles */
+body#homeBody {
+    height: fit-content;
+}
+
+body#profileBody nav.navigationBar span#profileImageSpan a {
+    height: fit-content;
+}
+
+div#contentMenuContainer {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - calc(0.8% + 60px));
+    width: calc(100vw - 280px);
+    align-self: flex-end;
+    overflow: scroll;
+    /* border: 2px solid #F5811E;
+    border-radius: 6px; */
+    top: calc(0.8% + 60px);
+    /* right: 0.8%; */
+}
+
+span.homeNavbarLogoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: max-content;
+    margin: 0px 0px 0px 16px;
+}
+
+span.homeNavbarLogoContainer h2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Kantumruy Pro", "sans-serif";
+    font-size: 20px;
+    height: 100%;
+    margin: 0px 0px 0px 0px;
+}
+
+div.menuSubContainer {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 26%;
+    left: 36%;
+}
+
+div.menuSubContainer a {
+    display: inline-block;
+    height: 100%;
+    width: fit-content;
+}
+
+button.sectionTwoButton {
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    font-family: "Kantumruy Pro", sans-serif;
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+}
+
+button.sectionTwoButtonOneActive {
+    border-left: 6px solid #ffffff;
+}
+
+button.sectionTwoButtonTwoActive {
+    border-left: 6px solid #ffffff;
+}   
+
+button.sectionTwoButtonThreeActive {
+    border-left: 6px solid #ffffff;
+}
+
+input.sectionTwoButtonFourActive {
+    border-left: 6px solid #ffffff;
+}
+
+div#contentMenuContainer div.contentContainer {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 18px 0px 0px 0px;
+    overflow-y: scroll; */
+}
+
+div#contentMenuContainer div.contentContainer h2 {
+    margin: 30px 0px 0px 0px;
+    width: fit-content;
+    font-family: "Kantumruy Pro", sans-serif;
+}
+
+div#contentMenuContainer div#profileImageContainer {
+    margin: 30px 0px 0px 0px;
+}
+
+div.profileSection {
+    display: none;
+}
+
+div.settingsSection {
+    margin: 90px 0px 0px 0px;
+}
+
+form#homePageForm {
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0px 0px 0px 0px;
+    border-radius: 0px;
+    width: fit-content;
+}
+
+form#homePageForm fieldset {
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+form#homePageForm fieldset input {
+    height: 100%;
+    width: 100%;
+    font-family: "Kantumruy Pro", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+body#postsBody div#contentMenuContainer div.contentContainer div.contentSubContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+body#postsBody div.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+    min-height: fit-content;
+    width: 100%;
+    border: 0.8px solid #A5A5A5;
+    border-radius: 8px;
+    padding: 30px 30px 0px 30px;
+    margin: 0px 0px 20px 0px;
+}
+
+body#postsBody div#contentMenuContainer div.contentContainer div.post:hover {
+    box-shadow: 2.4px 2.4px 4px #A5A5A5;
+}
+
+div.userInfoContainer {
+    display: flex;
+    width: 100%;
+    margin: 0px 0px 6px 0px;
+}
+
+span.imageContainer {
+    position: relative;
+    display: flex;
+    height: 40px;
+    width: 40px;
+    overflow: clip;
+    border-radius: 50%;
+}
+
+span.imageContainer img {
+    height: 100%;
+    width: 100%;
+    /* margin: 0px 0px 20px 0px; */
+}
+
+div.post span {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    font-family: "Kantumruy Pro", sans-serif;
+    font-size: 16px;
+    color: #010717;
+}
+
+span.userInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 0px 0px 10px;
+}
+
+span.userName {
+    font-weight: bolder;
+    margin: 0px 0px 4px 0px;
+}
+
+span.postDetails {
+    display: flex;
+    flex-direction: column;
+    margin: 14px 0px 20px 0px;
+}
+
+div.post span.postTitle {
+    margin: 0px 0px 4px 0px;
+    font-weight: 600;
+}
+
+div.post span.postDescription {
+    display: flex;
+    flex-direction: column;
+    /* display: block; */
+    max-height: 120px;
+    overflow: hidden;
+    padding: 0px 10px 0px 0px;
+}
+
+div.post span.postDescriptionShowContent {
+    max-height: fit-content !important;
+}
+
+div.post span.postDescription p {
+    margin: 0px 0px 30px 0px;
+}
+
+section.postMediaCarousel {
+    position: relative;
+    display: flex;
+    height: 300px;
+    width: 220px;
+    overflow: hidden;
+}
+
+section.postMediaCarousel section.mediaContainer{
+    width: 100%;
+}
+
+div.post span.postDescription img {
+    display: none;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin: 0px 0px 20px 0px;
+}
+
+div.post span.postDescription .activePostMedia {
+    display: block;
+} 
+
+div.post span.postDescription video {
+    height: 300px;
+    margin: 0px 0px 20px 0px;
+}
+
+section.postMediaCarousel button {
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    padding: 0px 0px 0px 0px;
+    background-color: #FFFFFF63;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    top: 50%;
+}
+
+section.postMediaCarousel button:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+section.postMediaCarousel button.previous {
+    left: 0px;
+}
+
+section.postMediaCarousel button.next {
+    right: 0px;
+}
+
+section.postMediaCarousel span.slideIndicatorsContainer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 0px;
+    height: 20px;
+}
+
+section.postMediaCarousel span.slideIndicator {
+    height: 8px;
+    width: 8px;
+    background-color: #FFFFFF60;
+    border-radius: 50%;
+    margin: 0px 4px 0px 0px;
+}
+
+section.postMediaCarousel span.slideIndicator.slideIndicatorActive {
+    background-color: #FFFFFF;
+}
+
+body#postsBody div#contentMenuContainer div.contentContainer div.post div {
+    font-family: "Kantumruy Pro", sans-serif;
+}
+
+div.postLastItemsContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0px 0px 30px 0px;
+}
+
+div.post .buttonsContainer {
+    display: flex;
+    justify-content: space-between;
+    width: max-content;
+}
+
+div.post .buttonsContainer span {
+    width: fit-content;
+}
+
+div.post .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 46px;
+    min-height: 46px;
+    width: 70px;
+    min-width: max-content;
+    background-color: transparent;
+    color: #808080;
+    font-weight: 600;
+    margin: 0px 12px 0px 0px;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    border: 0.8px solid #A5A5A5A5;
+    border-radius: 30px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn.clicked {
+    box-shadow: 4px 4px 0px #A5A5A5A5;
+    border-radius: 8px;
+}
+
+.commentsCount {
+    margin: 0px 4px 0px 0px;
+}
+
+div.post button.seeMoreButton {
+    display: none;
+}
+
+div.post button.seeLessButton {
+    display: none;
+}
+
+.show {
+    display: flex !important;
+}
+
+.btn svg {
+    margin: 0px 6px 0px 0px;
+}
+
+div.post button.likeButton {
+    margin: 0px 0px 0px 20px;
+}
+
+div.post button.likeButton span {
+    width: fit-content;
+}
+
+div.post button.likeButton .likesCount {
+    margin: 0px 4px 0px 0px;
+}
+
+div.post button.likeButton:hover {
+    cursor: pointer;
+}
+
+.btn svg.hide {
+    display: none;
+}
+
+div.clientInfo span {
+    font-size: 16px;
+}
+
+.commentsContainer {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.commentsContainer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 20px 0px;
+    width: 85%;
+}
+
+.createCommentContainer input {
+    height: 30px;
+    width: 80%;
+    border-radius: 30px;
+    border: 0.8px solid #A5A5A5A5;
+    padding: 0px 0px 0px 10px;
+    margin: 0px 0px 0px 8px;
+} 
+
+.commentSection .comment {
+    display: flex;
+    align-items: center;
+    width: 94%;
+    margin: 0px 0px 0px 0px;
+}
+
+body#postsBody div#contentMenuContainer button#loadMoreButton {
+    display: none;
+    background: none;
+    border: none;
+    font-family: "Kantumruy Pro", sans-serif;
+    font-weight: 500;
+    padding: 0px 6px 4px 6px;
+}
+
+body#postsBody dialog.postDialogShow {
+    height: 50vh;
+    width: 508px;
+}
+
+body#postsBody dialog#postDialog button#removePostModal {
+    margin: 0px 0px 0px 94%;
+    width: fit-content;
+    background-color: transparent;
+    border: none;
+    font-size: 22px;
+    font-family: "Kantumruy Pro", sans-serif;
+}
+
+body#postsBody dialog#postDialog form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 90%;
+    width: 100%;
+    /* border: 0.8px solid #000000; */
+}
+
+body#postsBody dialog#postDialog form input#postTitle {
+    width: 100%;
+    border: none;
+    border-bottom: 1.2px solid #000000;
+    font-family: "Kantumruy Pro", sans-serif;
+    font-size: 14px;
+    padding: 0px 0px 4px 0px;
+}
+
+body#postsBody dialog#postDialog form textarea {
+    height: 60%;
+    width: 100%;
+    border: none;
+    font-family: "Kantumruy Pro", sans-serif;
+    font-size: 14px;
+    margin: 6px 0px 0px 0px;
+}
+
+body#postsBody dialog#postDialog section.inputUploadPreviewContainer {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: 100%;
+}
+
+body#postsBody dialog#postDialog section.inputUploadPreviewContainer figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.8px solid #A5A5A5A5;
+    margin: 0px 0px 0px 0px;
+}
+
+body#postsBody dialog#postDialog section.inputUploadPreviewContainer figure img {
+    height: 22px;
+    margin: 0px 4px 0px 0px;
+}
+
+body#postsBody dialog#postDialog section.inputUploadPreviewContainer figure span {
+    font-size: 10px;
+    margin: 0px 2px 0px 0px;
+}
+
+body#postsBody dialog#postDialog section.inputUploadPreviewContainer figure span.removeMediaItem {
+    background-color: transparent;
+    border: none;
+    padding: 0px 4px 0px 4px;
+}
+
+body#postsBody dialog#postDialog section.inputUploadPreviewContainer figure input {
+    display: none;
+}
+
+body#postsBody dialog#postDialog span#specialActionsContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 86px;
+    margin: 20px 0px 20px 0px;
+}
+
+body#postsBody dialog#postDialog span#specialActionsContainer .postDataBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E6E6E6;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 4px 4px 4px;
+    margin: 0px 0px 0px 0px; 
+}
+
+body#postsBody dialog#postDialog::backdrop {
+    background-color: #000000;
+    opacity: 0.4;
+}
+
+body#postsBody button#postButton {
+    position: fixed;
+    top: 84%;
+    right: 60px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #FF0000;
+}
+
+/* personnel.php styles */
+span.searchBar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-start;
+    height: 40px;
+    min-height: 40px;
+    width: 278px;
+    border: 0.8px solid #A5A5A5A5;
+    margin: 10px 0px 30px 0px;
+    border-radius: 30px 30px 30px 30px;
+}
+
+span.searchBar svg {
+    margin: 2px 4px 2px 10px;
+}
+
+input#searchBarInput {
+    height: 100%;
+    width: 86%;
+    border: none;
+    border-left: 0.8px solid #A5A5A5A5;
+    border-radius: 0px 30px 30px 0px;
+    font-size: 16px;
+    padding: 0px 0px 0px 8px;
+}
+
+.personnelFeedContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.personnelCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-self: center;
+    height: 240px;
+    width: 189.6px;
+    border: 0.8px solid #A5A5A5A5;
+    border-radius: 6px;
+    padding: 0px 0px 10px 0px;
+    margin: 0px 0px 36px 0px;
+}
+
+.personnelCard img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.personnelCard figcaption {
+    margin: 0px 0px 0px 10px;
+    font-family: "Kantumruy Pro", sans-serif;
+    font-size: 14px;
+}
+
+.personnelCard .fullName {
+    font-weight: 600;
+}
+
+/* profilePreview.php styles */
+body#profilePreviewBody div#contentMenuContainer {
+    font-family: "Kantumruy Pro", sans-serif;
+    min-height: 0px;
+    overflow-y: scroll;
+}
+
+body#profilePreviewBody div#contentMenuContainer div.profilePreviewContainer span {
+    font-family: "Kantumruy Pro", sans-serif;
+    font-size: 20px;
+    margin: 0px 0px 20px 0px;
+}
+
+#profilePreviewBody .userBioInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userBioOne {
+    display: flex;
+    margin: 0px 0px 28px 0px;
+}
+
+.userBioOne .imageContainer {
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.userBioOne .userBio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 0px 0px 20px;
+}
+
+.userBio h3 {
+    margin: 0px 0px 4px 0px;
+}
+
+.userBio span.userName, .userBio span.age {
+    font-weight: 300;
+}
+
+.moreUserInfo {
+    width: 90%;
+}
+
+.moreUserInfo td {
+    height: 40px;
+    padding: 8px 8px 8px 8px;
+}
+
+.moreUserInfo td:nth-child(-n + 1) {
+    background-color: #FF0000;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 600;
+}
+
+.moreUserInfo td:nth-child(n + 2) {
+    background-color: #FFD8D8;
+}
+
+.experienceContainer {
+    width: 90%;
+}
+
+.experienceContainer h3 {
+    text-align: center;
+    margin: 20px 0px 14px 0px;
+}
+
+.experienceItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 24px 24px 16px;
+    margin: 0px 0px 6px 0px;
+    border: 2px solid #A5A5A5A5;
+    border-radius: 8px;
+}
+
+.experienceContainer h5 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0px 0px 6px 0px;
+}
+
+.experienceContainer img {
+    width: 260px;
+    margin: 16px 0px 0px 0px;
+}
+
+.beginChatButton {
+    height: 44px;
+    width: 118px;
+    font-family: "Kantumruy Pro", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #FF0000;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    margin: 10px 0px 10px 0px;
+}
+
+/* chat.php styles */
+#chatBody .navigationBar {
+    width: calc(100vw - 60px);
+}
+
+#chatBody .navigationBar .homeNavbarLogoContainer {
+    margin: 0px 0px 0px 6px;
+}
+
+#chatBody #contentMenuContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(100vw - 60px);
+    font-family: "Kantumruy Pro", sans-serif;
+    padding: 0px 0px 0px 6px;
+}
+
+.sideMenuHidden {
+    width: 60px !important;
+}
+
+#chatBody #sideMenuLogo .sMenuLogo {
+    width: 34px !important;
+    margin: 0px 0px 0px 0px;
+}
+
+#chatBody .sMenuHeaderText {
+    display: none;
+}
+
+#chatBody div#sideMenu .sMenuLink {
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+}
+
+#chatBody div#sideMenu .sMenuSVG {
+    margin: 0px 0px 0px 0px;
+}
+
+.chatSideMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 38%;
+    max-width: 350px;
+    font-family: "Kantumruy Pro", sans-serif;
+    margin: 0px 6px 0px 0px;
+    border-right: 1.2px solid #A5A5A5A5;
+    overflow: scroll;
+}
+
+.chatSideMenu .searchBar {
+    align-self: center;
+    margin: 0px 0px 30px 0px;
+}
+
+.searchResults {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border: 0.8px solid #A5A5A5A5;
+    border-radius: 0px 0px 12px 12px;
+    width: 100%;
+    top: 100%;
+    z-index: 1;
+}
+
+.searchResult {
+    padding: 10px 10px 10px 10px;
+    border-bottom: 0.8px solid #A5A5A5A5;
+}
+
+.chatItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 78px;
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 0.8px solid #A5A5A5A5;
+    border-bottom: 2px solid #A5A5A5A5;
+    padding: 10px 0px 10px 0px;
+    margin: 0px 0px 4px 0px;
+}
+
+.chatItem .imageContainer {
+    margin: 0px 10px 0px 0px;
+}
+
+.userDetails {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.topInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottomInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.lastMessage {
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0px 8px 0px 0px;
+}
+
+.unreadMessagesNo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 26px;
+    width: 26px;
+    min-height: 26px;
+    min-width: 26px;
+    background-color: #FF0000;
+    color: #FFFFFF;
+    border-radius: 50%;
+}
+
+.chatContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 72%;
+}
+
+.chatHeader {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 4px 0px 0px;
+}
+
+.userInfoContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 0px 0px 2px;
+}
+
+.userInfoContainer svg {
+    display: none;
+}
+
+.chatHeader .imageContainer {
+    margin: 0px 10px 0px 4px;
+}
+
+.usersInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.moreInfoContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.moreInfo {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    width: 104px;
+    top: 40px;
+    right: 12px;
+    background-color: #FFFFFF;
+    border: 0.8px solid #A5A5A5A5;
+    border-radius: 8px;
+    padding: 6px 0px 4px 0px;
+    z-index: 1;
+}
+
+.moreInfo hr {
+    height: 2px;
+    width: 100%;
+    margin: 4px 0px 6px 0px;
+}
+
+.moreInfoItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px 0px 4px 0px;
+}
+
+.moreInfoItem svg {
+    margin: 0px 4px 0px 0px;
+}
+
+.mainChat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 92%;
+    margin: 10px 0px 10px 0px;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: flex-start;
+    color: #FFFFFF;
+    padding: 12px 8px 4px 6px;
+    overflow: scroll;
+}
+
+.message {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    max-width: 262px;
+    background-color: #898989;
+    border-radius: 4px;
+    padding: 6px 6px 6px 6px;
+    margin: 0px 0px 12px 0px;
+}
+
+.messageContent {
+    text-wrap-mode: wrap;
+}
+
+.metaData {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 10px;
+    margin: 4px 0px 0px 0px;
+}
+
+.readStatus {
+    margin: 0px 0px 0px 2px;
+}
+
+.message::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    right: 88%;
+    border-width: 6px;
+    border-style: solid;
+    border-top: 6px solid #898989;
+}
+
+.sent {
+    align-self: flex-end;
+}
+
+.sent::after {
+    left: 88%;
+}
+
+.messageActionsContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    min-height: auto;
+    border: 0.8px solid #A5A5A5A5;
+    border-radius: 30px;
+    margin: 0px 0px 10px 0px;
+}
+
+#messageTxtBox {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    min-height: fit-content;
+    width: 90%;
+    border: none;
+    border-right: 0.8px solid #A5A5A5A5;
+    border-radius: 30px 0px 0px 30px;
+    padding: 0px 0px 0px 10px;
+}
+
+#messageTxtBox span.hide {
+    display: none;
+}
+
+.messageActions {
+    height: 100%;
+    width: 10%;
+    border-radius: 0px 30px 30px 0px;
+    margin: 8px 8px 8px 8px;
+}
+
+.send {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 4px 4px 4px 4px;
+}
+
+/* rides.php styles */
+.locationActions {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+
+iframe {
+    height: 90%;
+    min-height: 90%;
+    width: 100%;
+}
+
+.actionsContainer {
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    margin: 14px 0px 14px 0px;
+}
+
+.actionsContainer button {
+    height: 36px;
+    width: 90px;
+    background-color: #FF0000;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    font-family: "Kantumruy Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* userAccount.php styles */
+body#userAccountBody div#contentMenuContainer {
+    overflow-y: scroll;
+}
+
+#userAccountBody h2 {
+    font-family: "Kantumruy Pro", sans-serif;
+}
+
+img#profilePicture img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.accountInfoUpdateForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    border: none;
+    padding: 0px 0px 0px 0px;
+    margin: 16px 0px 30px 0px;
+}
+
+.accountInfoUpdateForm fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    padding: 0px 0px 0px 0px;
+}
+
+#profileImageInput {
+    display: none;
+}
+
+.profileBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    min-height: 40px;
+    min-width: 78px;
+    width: 100px !important;
+    background-color: #FF0000;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: "Kantumruy Pro", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0px 0px 0px 0px;
+    border: none;
+    border-radius: 10px !important;
+}
+
+.profileInfoUpdateForm {
+    width: 78%;
+    border: 0.8px solid #A5A5A5A5;
+    border-radius: 6px;
+    justify-content: center;
+    border-radius: 0px;
+    padding: 0px 0px 0px 0px;
+    /* margin: 0px 0px 20px 0px; */
+}
+
+.profileInfoUpdateForm fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.profileInfoUpdateForm label {
+    margin: 0px 0px 6px 0px;
+}
+
+.profileInfoUpdateForm input {
+    height: 36px;
+    width: 100%;
+    padding: 0px 0px 0px 6px;
+    margin: 0px 0px 10px 0px;
+    border-radius: 6px;
+}
+
+.statsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 380px;
+    margin: 20px 0px 0px 0px;
+}
+
+.statsContainer .profileButton {
+    display: flex;
+    justify-content: center;
+    width: max-content;
+    color: #FF0000;
+    border: solid 2px #FF0000;
+    border-radius: 8px;
+    padding: 8px 8px 8px 8px;
+    font-family: "Kantmruy Pro", sans-serif;    
+}
+
+.profileButton span {
+    margin: 0px 0px 0px 4px;
+}
+
+.logoutForm .profileBtn {
+    margin: 0px 0px 20px 0px;
+}
+
+/* 
+body#userAccountBody input.updateButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    min-height: 54px;
+    min-width: 78px;
+    width: 140px;
+    background-color: #F5811E;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: "Kantumruy Pro", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 10px;
+} */
+
+/* clientProfile.php styles */
+body#clientProfileBody div#contentMenuContainer {
+    overflow-y: scroll;
+}
+
+body#clientProfileBody nav.navigationBar span#profileImageSpan a {
+    height: fit-content;
+}
+
+body#clientProfileBody div#contentMenuContainer {
+    overflow-y: scroll;
+}
+
+body#clientProfileBody {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+    /* overflow-y: scroll; */
+}
+
+body#clientProfileBody h2#userName {
+    display: inline-block;
+    font-family: Kameron, serif;
+    text-align: center;
+}
+
+body#clientProfileBody h2#userName h2 {
+    display: inline-block;
+}
+
+body#clientProfileBody div.statsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 718px;
+    margin: 46px 0px 0px 0px;
+    /* border: 2px solid #A5A5A5; */
+}
+
+body#clientProfileBody .profileButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    width: 226px;
+    font-family: "Kantumruy Pro", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #101717;
+    color: #F5811E;
+    border-radius: 10px;
+}
+
+body#clientProfileBody div.statsContainer hr {
+    width: 80%;
+    margin: 0px 0px 0px 0px;
+}
+
+body#clientProfileBody span#averageWorkHours br {
+    display: none;
+}
+
+body#clientProfileBody div.organizations {
+    display: flex;
+    flex-direction: column;
+    /* height: ; */
+    width: 718px;
+    /* margin: 20px 0px 0px 0px; */
+    padding: 0px 20px 0px 20px;
+    border: 2px solid #101717;
+}
+
+body#clientProfileBody div.organizations p {
+    text-align: center;
+}
+
+body#clientProfileBody div#contentMenuContainer h2#organizationsWorkedWithTitle {
+    margin: 50px 0px 20px 0px;
+    font-family: "Kameron", serif;
+}
+
+body#clientProfileBody div.organizations span.organizationsItem {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    /* padding: 0px 20px 0px 20px; */
+    border-bottom: 0.4px solid #101717;
+    font-family: "Kantumruy Pro", sans-serif;
+}
+
+body#clientProfileBody div.organizations span.organizationsItem:last-child {
+    border: none;
+}
+
+body#clientProfileBody footer {
+    height: 200px;
+    margin: 0px 0px 0px 0px;
+}
+
+body#clientProfileBody div#contentMenuContainer form.logoutForm {
+    width: fit-content;
+    padding: 0px 0px 0px 0px;
+    margin: 30px 0px 0px 0px;
+}
+
+/* postJob.php styles */
+body#postJobBody div#contentMenuContainer div#jobPostContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 300px;
+    width: 84%;
+    border-radius: 0px;
+    margin: 16px 0px 0px 0px;
+    /* border: 2px solid #000000; */
+}
+
+body#postJobBody div#contentMenuContainer input#jobPostTitle {
+    height: 36px;
+    width: 100%;
+    border-radius: 0px;
+    padding: 2px 4px 2px 4px;
+}
+
+body#postJobBody div#contentMenuContainer textarea#jobPostDescription {
+    height: 100px;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    border-top-width: 1.6px;
+    border-right-width: 1.6px;
+    border-bottom-width: 1.6px;
+    border-left-width: 1.6px;
+    border-radius: 0px;
+    padding: 2px 4px 2px 4px;
+}
+
+body#postJobBody div#contentMenuContainer input#jobLocation {
+    height: 30px;
+    width: 100%;
+    border-radius: 0px;
+    padding: 2px 4px 2px 4px;
+}
+
+body#postJobBody div#contentMenuContainer input#jobPrice {
+    height: 26px;
+    /* width: 100%; */
+    border-radius: 0px;
+    padding: 2px 4px 2px 4px;
+}
+
+body#postJobBody div#contentMenuContainer div#jobPostContainer button#jobPostSubmitButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    min-height: 36px;
+    min-width: 88px;
+    background-color: #010717;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: "Kantumruy Pro", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0px 20px 0px 0px;
+    border-radius: 4px;
+}
+
+@media (min-width: 1400px) {
+    /* signUp.php styles */
+    form fieldset input {
+        /* height: 36px; */
+        font-size: 16px;
+    }
+
+    form div a#loginA {
+        font-size: 16px;
+    }
+
+    form div a#signUpA {
+        font-size: 16px;
+    }
+
+    form div.logoContainer h2 {
+        font-size: 26px;
+    }
+
+    /* profile.php styles */
+    body#profileBody img {
+        width: 290px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    body#profileBody h2#userName {
+        font-size: 28px;
+        margin: 26px 0px 20px 0px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) { 
+    /* signUp.php styles */
+    div.prevButtonContainer {
+        height: 38px;
+        width: 100%;
+    }
+
+    div.prevButtonContainer div#prevIcon {
+        height: 100%;
+        width: 8%;
+        border: 1px solid #000000;
+    }
+
+    form fieldset label {
+        font-size: 28px;
+    }
+
+    form fieldset input {
+        /* height: 54px; */
+        /* margin: 14px 0px 26px 0px; */
+        font-size: 24px;
+    }
+
+    form fieldset div a#loginA {
+        font-size: 16px;
+    }
+
+    form fieldset div a#signUpA {
+        font-size: 16px;
+    }
+
+    form fieldset div button {
+        height: 36px;
+        /* width: 80px; */
+        font-size: 16px;
+    }
+
+    form div.logoContainer h2 {
+        font-size: 20px;
+    }
+
+    /* personnel.php styles */
+    .personnelFeedContainer {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    /* profile.php styles */
+    body#profileBody img {
+        width: 250px;
+        margin: 0px 0px 0px 0px;
+    }
+
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    /* signUp.php styles */
+    div.prevButtonContainer {
+        height: 38px;
+        width: 100%;
+    }
+
+    div.prevButtonContainer div#prevIcon {
+        height: 100%;
+        width: 8%;
+        border: 1px solid #000000;
+    }
+
+    form fieldset label {
+        font-size: 20px;
+    }
+
+    form fieldset input {
+        /* height: 46px; */
+        /* margin: 14px 0px 26px 0px; */
+        font-size: 20px;
+    }
+
+    form fieldset div a#loginA {
+        font-size: 16px;
+    }
+
+    form fieldset div a#signUpA {
+        font-size: 16px;
+    }
+
+    form fieldset div button {
+        height: 36px;
+        /* width: 80px; */
+        /* font-size: 16px; */
+    }
+
+    /* jobs.php styles */
+    div#contentMenuContainer div.contentContainer {
+        /* height: fit-content; */
+        width: 100%;
+        padding: 30px 0px 0px 0px;
+    }
+
+    /* personnel.php styles */
+    .personnelFeedContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /*  profile.php styles */
+    body#profileBody img {
+        width: 250px;
+        margin: 50px 0px 0px 0px;
+    }
+}
+
+@media (max-width: 992px) {
+    /* signUp.php styles */
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    fieldset {
+        border: none;
+        margin: 0px 0px 0px 0px;
+    }
+
+    form div.logoContainer {
+        display: none;
+    }
+
+    form#homePageForm {
+        height: 44px;
+        width: 100%;
+    }
+
+    /* sideMenu.php */
+    div#sideMenu h2#sideMenuLogo {
+        text-align: center;
+        padding: 0px 0px 0px 0px;
+        margin: 50px 0px 16px 0px;
+    }
+
+    div#sideMenu ul li a {
+        font-size: 20px;
+    }
+
+    /* chat.php styles */
+    #chatBody #contentMenuContainer {
+        justify-content: center;
+        background-image: url("../pattern-randomized.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /*
+    .sMenuHeaderText {
+        display: block !important;
+    }
+
+    .sMenuLink {
+        margin: 0px 10px 0px 0px !important;
+    }
+
+    .sMenuSVG {
+        margin: 0px 10px 0px 0px !important;
+    }
+
+    .sideMenuTextHide {
+        display: block !important;
+    }
+    */
+    .userInfoContainer svg {
+        display: block !important;
+    }  
+
+    @keyframes left-slide-in {
+        0% {
+            transform: translate(-100vw, 0px);
+        }
+
+        100% {
+            transform: translate(0vw, 0px);
+        }
+    }
+    
+    @keyframes right-slide-in {
+        0% {
+            transform: translate(100vw, 0px);
+        }
+
+        100% {
+            transform: translate(0vw, 0px);
+        }
+    }
+
+    .chatSideMenu {
+        display: none;
+        margin: 0px 0px 0px 0px;
+        border: none;
+        width: 94%;
+        max-width: 510px;
+    }
+
+    .chatContainer {
+        display: none;
+        width: 98%;
+    }
+
+    .chatSideMenuShow {
+        display: flex !important;
+        animation: left-slide-in;
+        animation-duration: 0.4s;
+    }
+
+    .chatContainerShow {
+        display: flex;
+        background-color: #FFFFFF;
+        animation: right-slide-in;
+        animation-duration: 0.4s;
+    }
+
+    /* jobs.php styles */
+    nav.navigationBar {
+        /* position: relative; */
+        justify-content: space-between;
+    }
+
+    nav.navigationBar div.menuSubContainer {
+        position: absolute;
+        display: none;
+        left: 0%;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+        top: 56px;
+        background-color: #FFFFFF;
+        opacity: 0.8;
+        z-index: 1;
+    }
+
+    nav.navigationBar div.menuSubContainerShow a {
+        height: 44px;
+        width: 100%;
+    }
+
+    body#profileBody div.menuSubContainerShow form {
+        height: 44px;
+        width: 100%;
+    }
+
+    div#contentMenuContainer div.contentContainer {
+        height: fit-content;
+        /* width: 100vw; */
+        left: 0px;
+    }
+
+    body#postsBody div#contentMenuContainer div.contentContainer div.post {
+        width: 94%;
+    }
+
+    div.post span.postDescription img {
+        height: 340px;
+    }
+
+    /* personnel.php styles */
+    span.searchBar {
+        margin: 10px 0px 30px 10px;
+    }
+
+    .personnelFeedContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* rides.php styles */
+    .locationActions {
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    span.searchBar {
+        margin: 8px 0px 30px 50px;
+    }
+
+    .pickupLocationSearchBar {
+        margin: 8px 0px 0px 0px;
+    }
+
+    .pickupLocationSearchBar .searchResults {
+        display: none;
+    }
+
+    span.destinationSearchBar {
+        margin: 0px 0px 30px 0px;
+    }
+
+    /* profile.php styles */
+    body#profileBody img {
+        align-self: center;
+    }
+
+    body#profileBody {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        left: 0px;
+    }
+
+    body#profileBody img {
+        width: 162px;
+        margin: 20px 0px 0px 0px;
+    }
+
+    body#profileBody div.statsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 220px;
+        width: 514px;
+        margin: 20px 0px 0px 0px;
+    }
+
+    body#profileBody .profileButton {
+       display: flex;
+       align-items: center;
+       /* justify-content: flex-start; */
+       height: 52px;
+       width: 80%;
+       margin: 0px 0px 16px 0px;
+    }
+
+    body#profileBody div.statsContainer hr {
+        width: 80%;
+        margin: 0px 0px 0px 0px;
+    }
+
+    body#profileBody div#contentMenuContainer div.organizations {
+        width: 514px;
+    }
+
+    body#profileBody div#contentMenuContainer form.logoutForm {
+        width: calc(0.8 * 514px);
+        border: none;
+    }
+
+    body#profileBody div#contentMenuContainer form.logoutForm input.profileButton {
+        width: 100%;
+    }
+
+    body#profileBody footer#footer {
+        height: 220px;
+    }
+
+    /* clientProfile.php styles */
+    body#clientProfileBody img {
+        align-self: center;
+    }
+
+    body#clientProfileBody {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        left: 0px;
+    }
+
+    body#clientProfileBody img {
+        width: 162px;
+        margin: 20px 0px 0px 0px;
+    }
+
+    body#clientProfileBody div.statsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 220px;
+        width: 514px;
+        margin: 20px 0px 0px 0px;
+    }
+
+    body#clientProfileBody .profileButton {
+       display: flex;
+       align-items: center;
+       /* justify-content: flex-start; */
+       height: 52px;
+       width: 80%;
+       margin: 0px 0px 16px 0px;
+    }
+
+    body#clientProfileBody div.statsContainer hr {
+        width: 80%;
+        margin: 0px 0px 0px 0px;
+    }
+
+    body#clientProfileBody div#contentMenuContainer div.organizations {
+        width: 514px;
+    }
+
+    body#clientProfileBody div#contentMenuContainer form.logoutForm {
+        width: calc(0.8 * 514px);
+        border: none;
+    }
+
+    body#clientProfileBody div#contentMenuContainer form.logoutForm input.profileButton {
+        width: 100%;
+    }
+
+    body#clientProfileBody footer#footer {
+        height: 220px;
+    }
+
+    /* postJob.php styles */
+    body#postJobBody div#contentMenuContainer div#jobPostContainer {
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    /* signUp.php styles */
+    div.prevButtonContainer {
+        height: 38px;
+        width: 100%;
+    }
+
+    div.prevButtonContainer div#prevIcon {
+        height: 100%;
+        width: 8%;
+        border: 1px solid #000000;
+    }
+
+    form fieldset label {
+        font-size: 22px;
+    }
+
+    form fieldset input {
+        /* height: 4.6vw; */
+        padding: 1px 0px 1px 10px;
+        font-size: 16px;
+        /* margin: 12px 0px 2.6vw 0px; */
+    }
+
+    form fieldset div a#loginA {
+        font-size: 14px;
+    }
+
+    form fieldset div a#signUpA {
+        font-size: 14px;
+    }
+
+    form fieldset div button {
+        height: 36px;
+        /* width: 88px; */
+        /* font-size: 14px; */
+    }
+
+    /* profile.php styles */
+    body#profileBody img {
+        width: 250px;
+        margin: 40px 0px 0px 0px;
+    }
+
+    /* clientProfile.php styles */
+    body#clientProfileBody img {
+        width: 250px;
+        margin: 40px 0px 0px 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* navigationBar.php styles */
+    span.homeNavbarLogoContainer {
+        margin: 0px 0px 0px 0px;
+    }
+
+    /* sideMenu.php styles */
+    nav.navigationBar {
+        width: 100% !important;
+    }
+
+    nav.navigationBar button.hamburgerMenuTwo {
+        display: flex;
+    }
+
+    div#sideMenu {
+        display: none;
+        width: 100%;
+        left: 0.2%;
+        z-index: 2;
+    }
+
+    div.sideMenuHidden {
+        display: none !important;
+    }
+
+    div.sideMenuShow {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    div#sideMenu div#sideMenuCloseBarsContainer {
+        display: block;
+    }
+
+    div#contentMenuContainer {
+        width: 100% !important;
+    }
+
+    body#postsBody div#contentMenuContainer div.contentContainer div.post {
+        flex-direction: column;
+        align-items: center;
+        height: max-content;
+        min-height: auto;
+        padding: 28px 24px 0px 24px;
+    }
+
+    span.jobTitle {
+        margin: 0px 0px 6px 0px;
+    }
+
+    span.jobDescription {
+        margin: 6px 0px 0px 0px;
+    }
+
+    div.post span.postDescription img {
+        height: 340px;
+    }
+
+    /* userAccount.php styles */
+    .statsContainer {
+        flex-direction: column;
+        min-height: 110px;
+    }
+
+    /* clientChat.php styles */
+    body#chatBody div#contentMenuContainer div#searchContainer {
+        width: 80%;
+    }
+
+    body#chatBody div#contentMenuContainer div#searchContainer div#searchResultsContainer a {
+        width: 98%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    /* signUp.php styles */
+    body#signUpBody {
+        min-height: 100vh;
+    }
+
+    div.prevButtonContainer {
+        height: 36px;
+        width: 100%;
+    }
+
+    div.prevButtonContainer div#prevIcon {
+        height: 100%;
+        width: 8%;
+        border: 1px solid #000000;
+    }
+
+    form fieldset label {
+        font-size: 22px;
+    }
+
+    form fieldset input {
+        /* height: 6.4vw; */
+        padding: 1px 0px 1px 10px;
+        font-size: 16px;
+        /* margin: 14px 0px 2.8vw 0px; */
+    }
+
+    form fieldset button {
+        height: 40px;
+    }
+
+    /* jobs.php styles */
+    body#profileBody div.menuSubContainer {
+        top: 50px;
+    }
+
+    /* clientChat.php styles */
+    body#chatBody div#contentMenuContainer div#searchContainer {
+        width: 80%;
+    }
+
+    body#chatBody div#contentMenuContainer div#searchContainer div#searchResultsContainer a {
+        width: 98%;
+    }
+}
+
+@media (max-width: 576px) {
+    /* signUp.php and login.php styles */
+    body#signUpBody {
+        height: fit-content;
+        width: fit-content;
+    }
+
+    body#signUpBody div#registerContainer {
+        border-radius: 0px;
+    }
+    
+    h1.signUpH1 {
+        margin: 0px 0px 22px 0px;
+    }
+
+    h1.loginH1 {
+        margin: 0px 0px 22px 0px;
+    }
+
+    div.prevButtonContainer {
+        height: 36px;
+        width: 100%;
+    }
+
+    div.prevButtonContainer div#prevIcon {
+        height: 100%;
+        width: 12%;
+        border: 1px solid #000000;
+        /* margin: 0px 0px 0px 4%; */
+    }
+
+    /* navigatiobBar.php styles */
+    nav.navigationBar {
+        height: 50px;
+    }
+
+    nav.navigationBar span.userInfo {
+        display: none;
+    }
+
+    /* posts.php styles */
+    body#postsBody div#contentMenuContainer div.contentContainer div.contentSubContainer {
+        width: 80%;
+    }
+
+    div.postLastItemsContainer {
+        flex-direction: column;
+    }
+
+    div.post span.buttonsContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        min-height: 110px;
+        width: 100%;
+        /* margin: 0px 0px 20px 0px; */
+    }
+
+    body#postsBody div#contentMenuContainer div.contentContainer div.post .btn {
+        justify-content: center;
+        height: 46px;
+        min-height: max-content;
+        min-width: max-content;
+        width: 50%;
+        margin: 0px 0px 0px 0px;
+    }
+
+    button.seeMoreButton, button.seeLessButton {
+        align-self: center;
+    }
+
+    /* posts.php styles */
+    body#postsBody dialog.postDialogShow {
+        max-height: 100vh;
+        max-width: 100vw;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    /* personnel.php styles */
+    span.searchBar {
+        align-self: center;
+        margin: 8px 0px 30px 0px;
+    }
+    .personnelFeedContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .personnelCard {
+        height: 286px;
+        width: 232px;
+    }
+
+    .userBioOne {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imageContainer {
+        margin: 0px 0px 8px 0px;    
+    }
+
+    .userBioOne .userBio {
+        align-items: center;
+        padding: 0px 0px 0px 0px;
+    }
+
+    /* profile.php styles */
+    body#profileBody img {
+        width: 80%;
+        margin: 20px 0px 0px 0px;
+    }
+
+    body#profileBody div.statsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 82vw;
+        margin: 26px 0px 26px 0px;
+    }
+
+    body#profileBody .profileButton {
+       display: flex;
+       align-items: center;
+       /* justify-content: flex-start; */
+       height: 52px;
+       width: 80%;
+    }
+
+    body#profileBody div.statsContainer hr {
+        width: 80%;
+        margin: 0px 0px 0px 0px;
+    }
+
+    body#profileBody footer#footer {
+        height: 180px;
+    }
+
+    /* profile.php styles */
+    body#clientProfileBody img {
+        width: 80%;
+        margin: 20px 0px 0px 0px;
+    }
+
+    body#clientProfileBody div.statsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 82vw;
+        margin: 26px 0px 26px 0px;
+    }
+
+    h2#organizationsWorkedWithTitle {
+        font-size: 20px;
+    }
+
+    body#clientProfileBody .profileButton {
+       display: flex;
+       align-items: center;
+       /* justify-content: flex-start; */
+       height: 52px;
+       width: 80%;
+    }
+
+    body#clientProfileBody div.statsContainer hr {
+        width: 80%;
+        margin: 0px 0px 0px 0px;
+    }
+
+    body#clientProfileBody footer#footer {
+        height: 180px;
+    }
+
+    /* clientChat.php */
+    body#chatBody div#contentMenuContainer div#searchContainer {
+        width: 90%;
+    }
+}
