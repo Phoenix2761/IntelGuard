@@ -797,12 +797,14 @@ section.aboutCard h2, section.aboutCard p, section.aboutCard ul li {
         margin: 38px 0px 20px 0px;
     }
 
+
     div.sectionThree div.categoriesContainer {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
-
+    
     div.sectionThree div.categoriesContainer div {
+        height: auto;
         max-width: 330px;
         justify-self: center;
         align-self: center;
@@ -813,7 +815,8 @@ section.aboutCard h2, section.aboutCard p, section.aboutCard ul li {
     }
 
     div.sectionThree div.categoriesContainer div a {
-        margin: 0px 0px 0px 0px;
+        min-height: 40px;
+        margin: 0px 0px 12px 0px;
     }
 
     footer {
